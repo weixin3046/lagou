@@ -1,0 +1,19 @@
+<div ng-controller="details" class="details">
+    <div app-listheader></div>
+    <div class="details-list">
+  <ul>
+    <li>{{details.job}}：<span>{{details.salaryName}}</span></li>
+    <li>{{details.cityName}}：{{details.experience}}    {{details.education}}</li>
+    <li>{{details.benefit}}</li>
+  </ul>
+ <dl ui-sref="Position-Corp({id: details.id})">
+   <dt><img ng-src="{{details.imageUrl}}"></dt>
+   <dd>
+       <p>{{details.companyName}}</p>
+       <p>{{details.industryName}}/A轮/{{details.scaleName}}</p>
+   </dd>
+ </dl>
+  <div class="zi">{{details.description}}</div>
+    </div>
+    <button ng-click="homea()" ng-show="denglu">去登陆</button>
+</div>

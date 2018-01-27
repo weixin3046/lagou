@@ -1,0 +1,80 @@
+.loading {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  text-align: center;
+  .loader {
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 45%;
+    left: 45%;
+  }
+  .loader-21 div {
+   background: #00B38A;
+  }
+}
+.github{width:200px;text-align:center;height:60px;line-height:60px;font-size:24px;color:#fff;border:1px solid;border-color:rgba(255,255,255,0.5);margin:0 auto;cursor:pointer;}
+.github a{color:#fff;text-decoration:none;}
+html,body{width:100%;height:100%;}
+.loader{width:200px;height:200px;float:left;display:-webkit-flex;/*safari弹性布局*/justify-content:center;display:flex;align-items:center;}
+@-webkit-keyframes loader1{
+  0%{-webkit-transform:scale(1);opacity:1;}
+  45%{-webkit-transform:scale(0.1);opacity:0.7;}
+  80%{-webkit-transform:scale(1);opacity:1;}
+}
+.loader1 div{width:15px;height:15px;background:#fff;border-radius:50%;float:left;display:inline-block;margin:2px;}
+.loader1 div:nth-child(1){-webkit-animation:loader1 0.75s -0.12s ease infinite;}
+.loader1 div:nth-child(2){-webkit-animation:loader1 0.75s -0.24s ease infinite;}
+.loader1 div:nth-child(3){-webkit-animation:loader1 0.75s 0s ease infinite;}
+.loader1 div{width:15px;height:15px;background:#fff;border-radius:50%;float:left;display:inline-block;margin:2px;}
+@-webkit-keyframes loader2{
+  0%{-webkit-transform:rotate(0) scale(1);}
+  50%{-webkit-transform:rotate(180deg) scale(0.6);}
+  100%{-webkit-transform:rotate(360deg) scale(1);}
+}
+.loader2 div{width:25px;height:25px;border-radius:50%;border:2px #fff solid;border-bottom-color:transparent;background:transparent;-webkit-animation:loader2 1s 0.23s linear infinite;}
+@-webkit-keyframes loader3{
+  0%{-webkit-transform:scale(0.1);opacity:1;}
+  50%{-webkit-transform:scale(1);opacity:0.5;}
+  100%{-webkit-transform:scale(1.5);opacity:0.1;}
+}
+.loader3 div{width:30px;height:30px;border-radius:50%;background:#fff;-webkit-animation:loader3 0.8s linear infinite;}
+.loader4 div{width:20px;height:20px;background:transparent;border:2px solid #fff;border-radius:50%;-webkit-animation:loader3 0.8s linear infinite;}
+.loader-five{position:relative;}
+@-webkit-keyframes loader5{
+  0%{-webkit-transform:scale(0);opacity:0;}
+  5%{opacity:1;}
+  100%{-webkit-transform:scale(1);opacity:0;}
+}
+.loader-five div{width:60px;height:60px;border-radius:50%;background:#fff;position:absolute;left:0;top:-20px;}
+.loader-five div:nth-child(1){-webkit-animation:loader5 0.5s -0.12s linear infinite;}
+.loader-five div:nth-child(2){-webkit-animation:loader5 0.5s -0.06s linear infinite;}
+.loader-five div:nth-child(3){-webkit-animation:loader5 0.5s 0s linear infinite;}
+.loader-six{position:relative;width:60px;height:60px;}
+.loader-six div{width:60px;height:60px;border-radius:50%;background:transparent;position:absolute;left:0;top:10px;border:2px solid #fff;}
+@-webkit-keyframes loader6{
+  0%{-webkit-transform:scale(0.1);opacity:0.1;}
+  20%{-webkit-transform:scale(0.5);opacity:1;}
+  100%{-webkit-transform:scale(0.8);opacity:0.5;}
+}
+.loader-six div:nth-child(1){-webkit-animation:loader6 0.8s -0.24s infinite cubic-bezier(0.21,0.53,0.56,0.8);}
+.loader-six div:nth-child(2){-webkit-animation:loader6 0.8s -0.12s infinite cubic-bezier(0.21,0.53,0.56,0.8);}
+.loader-six div:nth-child(3){-webkit-animation:loader6 0.8s 0s infinite cubic-bezier(0.21,0.53,0.56,0.8);}
+.loader-seven{width:100px;height:100px;position:relative;}
+
+@-webkit-keyframes loader21{
+  0%{-webkit-transform:scale(1,1);}
+  100%{-webkit-transform:scale(1,0.3);}
+}
+.loader-21 div{width:5px;height:35px;background:#fff;border-radius:2px;display:inline-block;}
+.loader-21 div:nth-child(1){-webkit-animation:loader21 0.5s -0.3s ease-in-out infinite alternate;}
+.loader-21 div:nth-child(2){-webkit-animation:loader21 0.5s -0.15s ease-in-out infinite alternate;}
+.loader-21 div:nth-child(3){-webkit-animation:loader21 0.5s 0s ease-in-out infinite alternate;}
+.loader-21 div:nth-child(4){-webkit-animation:loader21 0.5s -0.15s ease-in-out infinite alternate;}
+.loader-21 div:nth-child(5){-webkit-animation:loader21 0.5s -0.4s ease-in-out infinite alternate;}
+

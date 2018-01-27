@@ -1,0 +1,84 @@
+.go-login {
+  width: 85%;
+  margin: 0 auto;
+  height: rem(800);
+  line-height: rem(800);
+
+  button {
+    text-align: center;
+    width: 100%;
+    height: rem(85);
+    background: #1fc8a1;
+    color: #fff;
+  }
+}
+
+.login {
+  width: 100%;
+  height: 100%;
+  background: #02905d;
+  button{
+    width: 90%;
+    height: rem(120);
+    background: #0ac59a;
+   margin-left: rem(35);
+    border-radius: 5px;
+    color: white;
+  }
+  button:last-child{
+    background: #029159;
+    border: 1px solid #36d1a9;
+    color: #45E3BE;
+  }
+  form {
+    padding: 25px 15px;
+    .box {
+      width: 100%;
+      background: white;
+      border-radius: 10px;
+      div {
+        width: 100%;
+        border-radius: 10px;
+        height: rem(180);
+        line-height: rem(180);
+        border-top: #f8f8f8 1px solid;
+        position: relative;
+        input {
+          width: 75%;
+          margin-left: rem(15);
+        }
+        span {
+          color: #e41111;
+          position: absolute;
+          right: 15px;
+          bottom: 0;
+        }
+      }
+      :last-child{
+        input{
+          width: 72%;
+        }
+        .auth{
+          color: #000;
+          font-size: rem(15);
+          height: rem(60);
+          line-height: rem(60);
+          width: rem(140);
+          text-align: center;
+          background: #cccccc;
+          border-radius: 15px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .register {
+    margin-left: rem(55);
+    color: white;
+    margin-top: rem(35);
+  }
+  .bj{
+    width: 100%;
+   height: rem(80);
+  }
+}

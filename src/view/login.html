@@ -1,0 +1,17 @@
+<div ng-controller="login" class="login">
+    <div class="bj"></div>
+    <app-listheader></app-listheader>
+    <form name="form">
+        <div class="box">
+            <div><input type="text" ng-model="user.phone" maxlength="11" name="phone" validator="required, phone" placeholder="已验证手机/邮箱"></div>
+            <div><input type="password" ng-model="user.password" name="password" maxlength="18" validator="required, password" placeholder="密码"></div>
+            <div ng-show="show" ><input type="text" placeholder="短信验证码">
+                <a class="auth">获取验证码</a>
+            </div>
+        </div>
+    </form>
+    <button validation-submit="form" ng-click="dule()">{{log}}</button>
+    <p class="register">还没有账号？</p>
+    <button ng-click="cut()">{{num}}</button>
+
+</div>

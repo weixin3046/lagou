@@ -1,0 +1,19 @@
+<div class="positionliast">
+    <section class="list-init" ng-repeat="item in data |sxuan:filterData track by $index" ui-sref="Position details({id: item.id})">
+        <dl>
+            <dt>
+                <img ng-src="{{ item.imageUrl }}">
+            </dt>
+            <dd>
+                <div >
+                    <h3 ng-bind="item.companyName"></h3>
+                    <p>
+                    <span ng-bind="item.job"></span><span>[{{item.cityName}}]</span>
+                    <span class="money" ng-bind="item.salaryName"></span>
+                    </p>
+                    <div class="tiem" ng-bind="item.date"></div>
+                </div>
+            </dd>
+        </dl>
+    </section>
+</div>

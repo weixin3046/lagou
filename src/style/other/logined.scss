@@ -1,0 +1,27 @@
+.logined{
+  width: 100%;
+  padding-top: rem(200);
+  li{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .en{
+    margin-top: rem(80);
+    width: rem(320);
+    height: rem(180);
+    float: left;
+    margin-left: rem(35);
+    line-height: rem(180);
+    background: #00b38b;
+    text-align: center;
+    color: white;
+  }
+  button{
+    margin-top: rem(80);
+    width: 100%;
+    height: rem(120);
+    background: #fe1800;
+    color: white;
+  }
+}

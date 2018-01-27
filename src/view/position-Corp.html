@@ -1,0 +1,21 @@
+<div ng-controller="Corp" class="Crop">
+    <div app-listheader></div>
+    <div class="Crop-list">
+    <dl>
+        <dt><img ng-src="{{cropa.imageUrl}}"></dt>
+        <dd>
+            <p>{{cropa.companyName}}</p>
+            <p>{{cropa.industryName}}/A轮/{{cropa.scaleName}}</p>
+        </dd>
+    </dl>
+  <div class="zi">职位分类</div>
+    <button ng-repeat="i in cropa.positionClass" class="btn" ng-click="btn($index)">{{i.name}}</button>
+        <div ng-repeat="i in cropa.positionClass" ng-show="$index==btnpost">
+        <ul ng-repeat="x in i.positionList">
+            <li>{{x.name}}</li>
+            <li>{{x.createdDate}}</li>
+            <li>{{x.salary}}</li>
+        </ul>
+    </div>
+</div>
+</div>

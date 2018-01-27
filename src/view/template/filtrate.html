@@ -1,0 +1,14 @@
+<div class="seek-header">
+<ul class="screen">
+    <li ng-click="citya()">城市</li>
+    <li ng-click="paya()">薪资</li>
+    <li ng-click="scalea()">公司规模</li>
+</ul>
+    <div id="ul">
+    <ul  class="city" ng-show="city">
+        <li class="city-list" ng-repeat="item in data" ng-click="listbtn(item)">{{item.name}}</li>
+        <li class="city-list" ng-click="cancel()">取消</li>
+    </ul>
+    <div class="zzc" ng-show="zzc"></div>
+</div>
+</div>

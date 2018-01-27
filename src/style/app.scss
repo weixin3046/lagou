@@ -1,0 +1,38 @@
+@charset "utf-8";
+//公共样式
+@function rem($px) {
+  @return $px / 46.875+rem;
+}
+html,body,ul,li,ol,h1,h2,h3,h4,p,a,img,header,div,dl,dt,dd{margin: 0;padding: 0;list-style: none}
+a,u{
+  text-decoration: none;
+  color: white;
+}
+$bai:100%;
+ul,ol,li{list-style: none;margin: 0;padding: 0;}
+body {
+  font-size: rem(30);
+}
+img{display: block;width: 100%;height: 100%;}
+html,body{
+  width: $bai;
+  height: $bai;
+}
+.view,.example {
+  height: 100%;
+  width: 100%;
+}
+input,button{
+  border: none;
+  outline: none;
+}
+@import "other/header";
+@import "other/list";
+@import "other/footer";
+@import "other/login";
+@import "other/register";
+@import "other/seek";
+@import "other/details";
+@import "other/Corp";
+@import "other/logined";
+@import "other/loading";

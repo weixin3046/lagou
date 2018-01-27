@@ -1,0 +1,76 @@
+.seek{
+  padding-top: rem(200);
+  padding-bottom: rem(85);
+}
+.seek-header{
+  position: absolute;
+  top: rem(80);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: rem(120);
+  border-bottom: 1px solid #e8e8e8;
+  .screen{
+    width: 100%;
+    background: #f7f7f7;
+    display: flex;
+    li{
+      width: 33%;
+      text-align: center;
+      line-height: rem(100);
+      height: rem(100);
+    }
+    li:hover{
+      border-bottom: 2px solid #00b38a;
+      background: #f0f0f0;
+    }
+  }
+}
+.seekheader{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  color: white;
+  height: rem(85);
+  background: #00b087;
+ :last-child{
+   padding-right: 10px;
+ }
+  :first-child{
+    padding-left: 10px;
+  }
+  input{
+    width: rem(420);
+    height: rem(55);
+    border-radius: 10px;
+  }
+}
+.city{
+  position: fixed;
+  display: block;
+  flex-wrap: wrap;
+  bottom: rem(89);
+  width: 100%;
+  z-index: 1;
+  .city-list{
+    width: 100%;
+    height: rem(70);
+    border-bottom: 1px solid #ccc;
+    background: #f7f7f7;
+    text-align: center;
+    font-size: rem(30);
+    line-height: rem(65);
+  }
+}
+.zzc{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+}
