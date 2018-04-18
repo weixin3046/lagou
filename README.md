@@ -4,6 +4,6 @@
 npm install
 
 # 运行项目 localhost:1234
-gnlp
+gulp
 
 
